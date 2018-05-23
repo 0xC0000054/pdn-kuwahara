@@ -72,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetPath)" "D:\Program Files\Paint.NET\Effects" /y

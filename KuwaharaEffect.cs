@@ -405,7 +405,7 @@ namespace Kuwahara
 
                     float min = float.MaxValue;
 
-                    float var = intensityVariance[xbase, ybase];
+                    float var = this.intensityVariance[xbase, ybase];
 
                     if (var < min)
                     {

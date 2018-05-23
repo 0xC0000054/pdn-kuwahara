@@ -10,21 +10,21 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-// Adapted from the Public Domain licensed 
+// Adapted from the Public Domain licensed
 // Kuwahara Filter for ImageJ
 // https://imagej.nih.gov/ij/plugins/kuwahara.html
 
 // The Kuwahara Filter is a noise-reduction filter that preserves edges.
-// 
+//
 //  a  a  ab   b  b
 //	a  a  ab   b  b
 //	ac ac abcd bd bd
 //	c  c  cd   d  d
 //	c  c  cd   d  d
-//   
-//	In the case of a 5x5 sampling window, the mean brightness and the  
+//
+//	In the case of a 5x5 sampling window, the mean brightness and the
 //	variance of each of the four 3x3 regions (a, b, c, d), are calculated
-//	and the value of the center pixel (abcd) is set to the mean value 
+//	and the value of the center pixel (abcd) is set to the mean value
 //	of the region that with the smallest variance.
 //
 //	Description based on the one at:
